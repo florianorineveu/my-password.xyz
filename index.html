@@ -1,9 +1,118 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Générateur de mots de passe forts et sécurisés &bull; Générateur PW</title>
+        <meta name="description" content="Créer un mot de passe fort et difficile à craquer grâce à notre générateur de mot de passe. Simple et efficace, vous pouvez choisir d'avoir ou pas chiffres, caractères spéciaux et majuscules.">
+        <meta name="keywords" content="mot de passe, password, générateur">
+        <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="css/main.css">
 
-</body>
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <div id="social_media">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://generateur.pw" data-text="Je viens de générer un mot de passe fort et sécurisé avec" data-via="FlorianNeveu" data-lang="fr" data-hashtags="password">Tweeter</a>
+            </div>
+            <div class="wrap">
+                <h1>Générateur de mots de passe sécurisés</h1>
+                <h2>Un clic, un mot de passe !</h2>
+                <form action="#" method="post" name="passwordForm" id="passwordForm">
+                    <p>
+                        <input type="text" name="passwordForm_password" id="passwordForm_password" disabled="disabled" value="">
+                        <input type="submit" name="passwordForm_submit" id="passwordForm_submit" value="Générer">
+                    </p>
+                    <div id="criteres">
+                        <fieldset>
+                            <p id="select">Sélectionnez les critères de génération de votre mot de passe sécurisé :</p>
+                            <div id="left">
+                                <p><input type="checkbox" name="passwordForm_uppercase" id="passwordForm_uppercase" class="checkbox" checked="checked"> <label for="passwordForm_uppercase">Avec des lettres <span id="maj">MAJUSCULES</span></label></p>
+                                <p><input type="checkbox" name="passwordForm_lowercase" id="passwordForm_lowercase" class="checkbox" checked="checked"> <label for="passwordForm_lowercase">Avec des lettres minuscules</label></p>
+                            </div>
+                            <div id="center">
+                                <p><input type="checkbox" name="passwordForm_number" id="passwordForm_number" class="checkbox" checked="checked"> <label for="passwordForm_number">Avec des chiffres</label></p>
+                                <p><input type="checkbox" name="passwordForm_special" id="passwordForm_special" class="checkbox"> <label for="passwordForm_special">Avec des caractères spéciaux</label></p>
+                            </div>
+                            <div id="right">
+                            <p><label for="passwordForm_caracternumber">
+                                Nombre de caractères :
+                                <select name="passwordForm_caracternumber" id="passwordForm_caracternumber">
+                                    <optgroup label="Pas recommandé">
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </optgroup>
+                                    <optgroup label="Recommandé">
+                                        <option value="10" selected="selected">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                    </optgroup>
+                                </select>
+                            </label></p>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <section id="security" class="wrap">
+            <div id="more">
+                <h3 class="green">Sécurisé ?</h3>
+                <p>Oui, le mot de passe vous est parvenu à l'aide de <a href="https://fr.wikipedia.org/wiki/JavaScript" title="Définition de JavaScript sur Wikipédia">JavaScript</a>, et n'est donc pas présent dans le code source de la page.
+                De plus, il est généré de façon totalement aléatoire en fonction des critères que vous avez choisis.</p>
+                <p>Sachez également qu'aucune donnée personnelle ni trace des mots de passe créés ne sont stockés sur ce site.</p>
+            </div>
+        </section>
+        <section id="explication" class="wrap">
+            <h3 class="blue">Un mot de passe sécurisé...</h3>
+            <ul id="yes">
+                <li>contient au minimum <span class="big">10 caractères</span> ; </li>
+                <li>contient des <span class="maj">majuscules</span> ; </li>
+                <li>contient des minuscules ; </li>
+                <li>contient des chiffres ; </li>
+                <li>contient des des caractères spéciaux comme <span class="big">* $ % ! : ; . , ? &amp; ( - _ ) = # { [ | @ ] }</span> ; </li>
+            </ul>
+            <ul id="non">
+                <li>ne ressemble pas à l'un de vos mots de passe ; </li>
+                <li>n'est pas partagé entre plusieurs comptes ; </li>
+                <li>n'est pas divulgué à qui que ce soit ; </li>
+                <li>ne contient pas votre nom ; </li>
+                <li>ne contient pas votre prénom ; </li>
+                <li>ne contient pas votre identifiant ; </li>
+                <li>ne contient pas le nom d'un de vos proches ; </li>
+                <li>ne contient pas votre date de naissance ou celle d'un proche ; </li>
+                <li>ne contient pas de mots communs ; </li>
+                <li>ne contient pas une suite de caractères venant de votre clavier comme <span class="big">azerty</span>, <span class="big">qwertyuiop</span> ou <span class="big">123456789</span>.</li>
+            </ul>
+        </section>
+        <footer class="wrap">
+            <p>Copyright &copy; 2013 <a href="http://fnev.eu" title="Développeur Web à Paris" target="_blank">Florian Neveu</a>. Tous droits réservés. – Conception graphique par <a href="http://www.marguerite-nicot.vision-du-net.com" title="Marguerite Nicot - Webdesigner et intégratrice" target="_blank"> Marguerite Nicot</a>, intégration par <a href="http://htmel.fr" title="Développeuse Web et Intégratrice - Mélina Marignale" target="_blank">Mélina Marignale</a>.</p>
+        </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script type="text/javascript" src="javascript/jquery.min.js"><\/script>');</script>
+        <script src="/javascript/generator.js"></script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-43645597-3', 'generateur.pw');
+            ga('send', 'pageview');
+
+        </script>
+    </body>
 </html>
