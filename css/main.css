@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('../fonts/quicksand-bold-webfont.eot');
+    src: url('../fonts/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/quicksand-bold-webfont.woff') format('woff'),
+    url('../fonts/quicksand-bold-webfont.ttf') format('truetype'),
+    url('../fonts/quicksand-bold-webfont.svg#quicksandbold') format('svg');
+}
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../fonts/quicksand-regular-webfont.eot');
+    src: url('../fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/quicksand-regular-webfont.woff') format('woff'),
+    url('../fonts/quicksand-regular-webfont.ttf') format('truetype'),
+    url('../fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* FIN MEYER */
+body {
+    font-family: 'quicksandregular', Helvetica;
+    font-size: 16px;
+    color: #646566;
+}
+header {
+    background: url("../images/header_bg.jpg") repeat-x center top;
+    background-size: cover;
+    height: 530px;
+    margin-bottom: 45px;
+    padding: 0 10px;
+}
+h1 {
+    font-size: 44px;
+    padding-top: 70px;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 28px;
+    color: #8b8b8f;
+    margin: 0 auto;
+}
+h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.wrap {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+#passwordForm_password {
+    width: 700px;
+    height: 67px;
+    margin: 45px 0 15px;
+    background-color: #f2f1f0;
+    border: 1px solid #c1c1c1;
+    font-size: 24px;
+    color: #a4a4a6;
+    font-family: 'quicksandregular';
+    text-align: center;
+    transition-property: border;
+    transition-duration: .5s;
+}
+#passwordForm_password:hover, #passwordForm_password:focus {
+    border: 1px solid #fad03a;
+}
+#passwordForm_submit {
+    width: 220px;
+    height: 70px;
+    color: white;
+    background-color: #fad03a;
+    border: 1px solid white;
+    font-family: 'quicksandbold';
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#passwordForm_submit:hover, #passwordForm_submit:focus {
+    border: 1px solid ;
+}
+#criteres {
+    background: url("../images/criteres_bg.png") no-repeat;
+    margin: 0 auto;
+}
+#criteres fieldset {
+    margin-left: 60px;
+    width: 930px;
+    height: 150px;
+}
+fieldset input[type="checbox"] {
+    border: 2px solid #646566;
+}
+fieldset #select {
+    font-size: 20px;
+    padding: 30px 0 20px;
+}
+fieldset label {
+    font-family: Helvetica;
+    color: #969799;
+}
+fieldset #left, fieldset #center {
+    float: left;
+    margin-right: 60px;
+}
+fieldset #right {
+    float: left;
+}
+.maj {
+    text-transform: uppercase;
+}
+.big {
+        font-family: 'quicksandbold';
+}
+.green {
+    color: #4cd964;
+}
+.blue {
+    color: #5bcaff;
+}
+#security {
+    margin-top: 45px;
+    background: url("../images/border.png") no-repeat center bottom;
+}
+#security #more {
+    background: url("../images/cadenas.png") no-repeat left top;
+    padding-bottom: 25px;
+}
+#more a {
+    text-decoration: none;
+    font-family: 'quicksandbold';
+    color: #4cd964;
+    transition-property: color;
+    transition-duration: .5s;
+}
+#more a:hover, #more a:focus {
+    color: #646566;
+}
+#security p {
+    margin-bottom: 20px;
+    margin-left: 140px;
+}
+#explication {
+    min-height: 470px;
+    margin-top: 60px;
+    background: url("../images/check.png") no-repeat left top;
+}
+#explication h3, #security h3 {
+    margin-left: 140px;
+}
+#explication #yes {
+    float: left;
+    width: 390px;
+    margin: 0 20px 0 140px;
+}
+#explication #non {
+    float: left;
+    width: 390px;
+}
+#explication li {
+    background: url("../images/rond.png") no-repeat left center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    height: 20px;
+    transition-property: backgroung, color;
+    transition-duration: 0.3s;
+}
+#explication #yes li:hover {
+    color: #5bcaff;
+    background: url("../images/bluetick.png") no-repeat left center;
+}
+#explication #non li:hover {
+    color: #ff1300;
+    background: url("../images/redcross.png") no-repeat left center;
+}
+footer.wrap {
+    clear: both;
+    color: #9fa0a1;
+    height: 50px;
+    font-size: 12px;
+    margin: 35px auto 0;
+}
+footer p {
+    text-align: center;
+}
+footer a {
+    color: #9fa0a1;
+    text-decoration: none;
+}
+footer a:hover, footer a:focus {
+    text-decoration: underline;
+}
+input[type="checkbox"] {
+    line-height: 30px;
+}
+
+input[type="checkbox"]:not(:checked), input[type="checkbox"]:checked {
+position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:not(:checked) + label, input[type="checkbox"]:checked + label {
+    position: relative; /* permet de positionner les pseudo-éléments */
+    padding-left: 25px; /* fait un peu d'espace pour notre case à venir */
+    cursor: pointer;    /* affiche un curseur adapté */
+}
+
+[type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    line-height: 30px;
+    border: 2px solid #969799;
+    border-radius: 3px;
+}
+
+[type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after {
+    content: "\2713";
+    position: absolute;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    font-size: 25px;
+    line-height: 10px;
+    color: #fad03a;
+    border: 2px solid #fad03a;
+    border-radius: 3px;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+select {
+    width: 60px;
+}
+#left p, #center p {
+    margin-bottom: 20px;
+}
+.twitter-share-button {
+    margin: 10px 0 0 1080px;
+}
