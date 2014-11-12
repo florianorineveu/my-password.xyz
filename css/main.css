@@ -72,6 +72,12 @@ header {
     margin-bottom: 45px;
     padding: 0 10px;
 }
+#social_media {
+	width: 990px;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: right;
+}
 h1 {
     font-size: 44px;
     padding-top: 70px;
@@ -285,7 +291,4 @@ select {
 }
 #left p, #center p {
     margin-bottom: 20px;
-}
-.twitter-share-button {
-    margin: 10px 0 0 1080px;
 }
