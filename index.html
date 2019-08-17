@@ -100,17 +100,32 @@
         <footer class="wrap">
             <p>Copyright &copy; 2013 <a href="http://fnev.eu" title="Développeur Web à Paris" target="_blank">Florian Neveu</a>. Tous droits réservés. – Conception graphique par <a href="http://www.marguerite-nicot.vision-du-net.com" title="Marguerite Nicot - Webdesigner et intégratrice" target="_blank"> Marguerite Nicot</a>, intégration par <a href="http://htmel.fr" title="Développeuse Web et Intégratrice - Mélina Marignale" target="_blank">Mélina Marignale</a>.</p>
         </footer>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script type="text/javascript" src="/javascript/jquery.min.js"><\/script>');</script>
-        <script src="/javascript/generator.js"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43645597-5"></script>
+        <script src="tarteaucitron/tarteaucitron.js"></script>
         <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-43645597-5');
+            tarteaucitron.init({
+                "privacyUrl": "",
+                "hashtag": "#tarteaucitron",
+                "cookieName": "tarteaucitron",
+                "orientation": "bottom",
+                "showAlertSmall": true,
+                "cookieslist": true,
+                "adblocker": false,
+                "AcceptAllCta" : true,
+                "highPrivacy": false,
+                "handleBrowserDNTRequest": false,
+                "removeCredit": true,
+                "moreInfoLink": true,
+                "useExternalCss": false,
+                "readmoreLink": "/cookiespolicy"
+            });
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script type="text/javascript" src="javascript/jquery.min.js"><\/script>');</script>
+        <script src="javascript/generator.js"></script>
+        <script>
+            tarteaucitron.user.gtagUa = 'UA-43645597-5';
+            tarteaucitron.user.gtagMore = function () { };
+            (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
         </script>
     </body>
 </html>
