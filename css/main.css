@@ -292,3 +292,7 @@ select {
 #left p, #center p {
     margin-bottom: 20px;
 }
+
+.tacTwitter {
+    display: none !important;
+}

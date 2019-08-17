@@ -15,7 +15,7 @@
     <body>
         <header>
             <div id="social_media">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://generateur.pw" data-text="Je viens de générer un mot de passe fort et sécurisé sur"  data-lang="fr" data-hashtags="password">Tweeter</a>
+                <span class="tacTwitter"></span><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://generateur.pw" data-text="Je viens de générer un mot de passe fort et sécurisé sur Generateur.PW" data-count="horizontal" data-lang="fr" data-hashtags="password" data-dnt="true">Tweeter</a>
             </div>
             <div class="wrap">
                 <h1>Générateur de mots de passe sécurisés</h1>
@@ -138,6 +138,9 @@
             tarteaucitron.user.gtagUa = 'UA-43645597-5';
             tarteaucitron.user.gtagMore = function () { };
             (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+        </script>
+        <script>
+            (tarteaucitron.job = tarteaucitron.job || []).push('twitter');
         </script>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </body>
